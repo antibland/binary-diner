@@ -47,7 +47,7 @@ function Header() {
   return (
     <HeaderWrap>
       <HeaderH1>
-        <NavLink to="/">* Mel’s Binary Diner *</NavLink>
+        <NavLink to="/">*Mel’s Binary Diner*</NavLink>
       </HeaderH1>
       <HeaderH2>Third Time's a Charm</HeaderH2>
     </HeaderWrap>

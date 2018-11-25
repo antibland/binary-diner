@@ -1,10 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import utilities from './utilities';
 
 const MenuList = styled.ul`
   flex-grow: 1;
-  column-count: 2;
+  ${utilities.media.small`
+    column-count: 2;
+  `}
 `;
 
 const MenuListItemOuter = styled.li`
