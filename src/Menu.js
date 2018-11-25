@@ -16,6 +16,14 @@ const MenuListItemOuter = styled.li`
 
 const MenuListItemInner = styled.li`
   margin-bottom: 1.5rem;
+  ${utilities.media.medium`
+    padding: 0 .5em;
+  `}
+`;
+
+const MenuListItemHeader = styled.h4`
+  display: flex;
+  justify-content: space-between;
 `;
 
 const CategoryTitle = styled.h3`
@@ -29,6 +37,9 @@ const CategoryTitle = styled.h3`
 const CategoryDescription = styled.p`
   font-size: 15px;
   margin-bottom: 1.35rem;
+  ${utilities.media.medium`
+    padding: 0 .5em;
+  `}
 `;
 
 const data = [
@@ -119,11 +130,12 @@ function Menu() {
             <ul>
               {section.items.map((items, itemsIndex) => (
                 <MenuListItemInner key={itemsIndex}>
-                  <h4>
+                  <MenuListItemHeader>
                     <NavLink to={`/menu/${items.componentName}`}>
                       {items.name}
                     </NavLink>
-                  </h4>
+                    <span className="price">{items.price}</span>
+                  </MenuListItemHeader>
                   <p>{items.description}</p>
                 </MenuListItemInner>
               ))}
