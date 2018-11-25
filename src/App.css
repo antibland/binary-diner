@@ -29,6 +29,7 @@ html {
   --red: rgb(241, 9, 10);
   --light-green: rgb(204, 235, 230);
   --green: rgb(153, 216, 206);
+  --smoke: #e4e4e4;
 }
 
 .App {

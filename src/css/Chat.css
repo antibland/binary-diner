@@ -1,6 +1,7 @@
 .log {
   margin: 0 auto 3em;
   padding: 1em 0;
+  width: 80%;
 }
 
 .entry {
@@ -8,7 +9,7 @@
   flex-direction: row;
   align-items: flex-end;
   max-width: 100%;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
 }
 
 .entry.mine {
@@ -16,9 +17,9 @@
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
 }
 
 .message {
@@ -27,9 +28,7 @@
   padding: 0.5em;
   margin: 0 1em;
   border-radius: 4px;
-  font-weight: lighter;
   max-width: 70%;
-  font-weight: bold;
 }
 
 .message:before {
@@ -45,8 +44,8 @@
 }
 
 .entry.mine .message {
-  background: #08f;
-  color: white;
+  background-color: var(--green);
+  color: black;
 }
 
 .entry.mine .message:before {
@@ -54,5 +53,13 @@
   bottom: 0.6em;
   left: auto;
   border: 6px solid transparent;
-  border-left-color: #08f;
+  border-left-color: var(--green);
+}
+
+@media screen and (min-width: 800px) {
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
 }
