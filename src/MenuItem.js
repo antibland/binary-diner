@@ -2,6 +2,7 @@ import React, { Suspense, Component } from 'react';
 import { PropTypes } from 'prop-types';
 import shortid from 'shortid';
 import * as Views from './views';
+import './css/Chat.css';
 
 class MenuItem extends Component {
   render() {

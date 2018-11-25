@@ -15,12 +15,6 @@ const MenuListItemInner = styled.li`
   margin-bottom: 1.5rem;
 `;
 
-const Warning = styled.p`
-  font-size: 0.9rem;
-  text-align: center;
-  padding-bottom: 1rem;
-`;
-
 const CategoryTitle = styled.h3`
   font-family: 'Galada';
   color: var(--red);
@@ -134,10 +128,6 @@ function Menu() {
           </MenuListItemOuter>
         ))}
       </MenuList>
-      <Warning>
-        Consuming raw or undercooked <code>JavaScript</code>, <code>CSS</code>{' '}
-        or <code>HTML</code> may increase your risk of codeborne illness.
-      </Warning>
     </>
   );
 }

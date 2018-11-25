@@ -1,0 +1,58 @@
+.log {
+  margin: 0 auto 3em;
+  padding: 1em 0;
+}
+
+.entry {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  max-width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.entry.mine {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.message {
+  position: relative;
+  background-color: #ddd;
+  padding: 0.5em;
+  margin: 0 1em;
+  border-radius: 4px;
+  font-weight: lighter;
+  max-width: 70%;
+  font-weight: bold;
+}
+
+.message:before {
+  position: absolute;
+  right: auto;
+  bottom: 0.6em;
+  left: -12px;
+  height: 0;
+  content: "";
+  border: 6px solid transparent;
+  border-right-color: #ddd;
+  z-index: 2;
+}
+
+.entry.mine .message {
+  background: #08f;
+  color: white;
+}
+
+.entry.mine .message:before {
+  right: -12px;
+  bottom: 0.6em;
+  left: auto;
+  border: 6px solid transparent;
+  border-left-color: #08f;
+}
