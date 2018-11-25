@@ -8,7 +8,7 @@ function Main() {
     <main>
       <Switch>
         <Route exact path="/" component={Menu} />
-        <Route path="/menu/:item" component={MenuItem} />
+        <Route path="/menu/:componentName" component={MenuItem} />
       </Switch>
     </main>
   );

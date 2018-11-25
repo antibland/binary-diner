@@ -18,6 +18,7 @@ const MenuListItemInner = styled.li`
 const Warning = styled.p`
   font-size: 0.9rem;
   text-align: center;
+  padding-bottom: 1rem;
 `;
 
 const CategoryTitle = styled.h3`
@@ -41,46 +42,55 @@ const data = [
     items: [
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
       {
         name: 'Button',
+        componentName: 'Button',
         description: 'A sumptuous combination of form and function',
         price: '$4.50',
       },
@@ -93,7 +103,8 @@ const data = [
     items: [
       {
         name: 'Basic Accordion',
-        description: 'A common feature of our menu. Great for FAQ-lovers.',
+        componentName: 'Accordion',
+        description: 'A delicious, pure CSS dish. Hold the JavaScript.',
         price: '$6.99',
       },
     ],
@@ -112,9 +123,7 @@ function Menu() {
               {section.items.map((items, itemsIndex) => (
                 <MenuListItemInner key={itemsIndex}>
                   <h4>
-                    <NavLink
-                      to={`/menu/${items.name.toLowerCase().replace(' ', '-')}`}
-                    >
+                    <NavLink to={`/menu/${items.componentName}`}>
                       {items.name}
                     </NavLink>
                   </h4>

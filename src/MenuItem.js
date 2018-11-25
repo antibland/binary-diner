@@ -1,31 +1,36 @@
-import React, { Component } from 'react';
+import React, { Suspense, Component } from 'react';
 import { PropTypes } from 'prop-types';
+import shortid from 'shortid';
+import * as Views from './views';
 
 class MenuItem extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { item: null };
-  }
-
-  componentDidMount() {
-    // eslint-disable-next-line react/prop-types
-    const { match } = this.props;
-    this.setState({ item: match.params.item });
-  }
-
   render() {
-    const { item } = this.state;
+    const {
+      match: {
+        params: { componentName },
+      },
+    } = this.props;
+
+    const Empty = () => <div>This is not on the menu.</div>;
+    const dynamicComponent = (() => {
+      const MyComponent = Views[`${componentName}View`]
+        ? Views[`${componentName}View`]
+        : Empty;
+      return <MyComponent key={shortid.generate()} />;
+    })();
+
     return (
       <>
-        <p>Your order: {item}</p>
+        <Suspense fallback={<div>Loading…</div>}>{dynamicComponent}</Suspense>
       </>
     );
   }
 }
 MenuItem.propTypes = {
-  params: PropTypes.shape({
-    item: PropTypes.string,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      componentName: PropTypes.string.isRequired,
+    }),
   }),
 };
 
