@@ -14,11 +14,7 @@ const ButtonView = () => (
 
     <ul className="log">
       <li className="entry theirs">
-        <img
-          src="http://www.ivy-style.com/wp-content/uploads/2011/03/snob.jpg"
-          alt=""
-          className="avatar"
-        />
+        <img src="/snob.jpg" alt="" className="avatar" />
         <p className="message">
           Enjoy your button, sir. What's that? You don't like it?
         </p>
