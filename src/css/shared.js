@@ -106,6 +106,9 @@ const shared = {
       padding: 1em;
     `}
   `,
+  sectionTitle: () => styled.h2`
+    margin-bottom: 1rem;
+  `,
 };
 
 export default shared;

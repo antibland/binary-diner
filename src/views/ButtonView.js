@@ -5,11 +5,12 @@ import shared from '../css/shared';
 const ReasonList = shared.reasonList();
 const ReasonListItem = shared.reasonListItem();
 const Section = shared.section();
+const SectionTitle = shared.sectionTitle();
 
 const ButtonView = () => (
   <>
     <Section>
-      <h2>Attempt #1</h2>
+      <SectionTitle>Attempt #1</SectionTitle>
       <Highlight className="html">{`<a href="#">
   Click here
 </a>`}</Highlight>
@@ -43,7 +44,7 @@ const ButtonView = () => (
     </Section>
 
     <Section>
-      <h2>Attempt #2</h2>
+      <SectionTitle>Attempt #2</SectionTitle>
       <Highlight className="html">
         {`<a tabindex="0" role="button" href="#">
   Click here
@@ -83,7 +84,7 @@ const ButtonView = () => (
     </Section>
 
     <Section>
-      <h2>Attempt #3</h2>
+      <SectionTitle>Attempt #3</SectionTitle>
       <Highlight className="html">{`<button>
   Click here
 </button>`}</Highlight>
