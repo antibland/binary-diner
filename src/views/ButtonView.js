@@ -10,7 +10,9 @@ const ButtonView = () => (
   <>
     <Section>
       <h2>Attempt #1</h2>
-      <Highlight className="html">{`<a href="#">Click here</a>`}</Highlight>
+      <Highlight className="html">{`<a href="#">
+  Click here
+</a>`}</Highlight>
 
       <ul className="log">
         <li className="entry theirs">
@@ -43,7 +45,9 @@ const ButtonView = () => (
     <Section>
       <h2>Attempt #2</h2>
       <Highlight className="html">
-        {`<a tabindex="0" role="button" href="#">Click here</a>`}
+        {`<a tabindex="0" role="button" href="#">
+  Click here
+</a>`}
       </Highlight>
 
       <ul className="log">
@@ -80,7 +84,9 @@ const ButtonView = () => (
 
     <Section>
       <h2>Attempt #3</h2>
-      <Highlight className="html">{`<button>Click here</button>`}</Highlight>
+      <Highlight className="html">{`<button>
+  Click here
+</button>`}</Highlight>
 
       <ul className="log">
         <li className="entry theirs">
