@@ -34,7 +34,6 @@ html {
 
 body {
   background-image: url(https://cssdive.com/wp-content/uploads/2012/09/Coffee-Background-2.jpg);
-  background-attachment: fixed;
   background-position: -560px 100px;
   background-repeat: repeat-y;
   background-color: transparent;

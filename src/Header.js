@@ -39,8 +39,9 @@ const HeaderH1 = styled.h1`
 const HeaderH2 = styled.h2`
   text-transform: uppercase;
   letter-spacing: -1px;
-  word-spacing: 4px;
+  word-spacing: 2px;
   font-size: 1rem;
+  font-style: italic;
 `;
 
 function Header() {
@@ -49,7 +50,7 @@ function Header() {
       <HeaderH1>
         <NavLink to="/">*Mel’s Binary Diner*</NavLink>
       </HeaderH1>
-      <HeaderH2>Third Time's a Charm</HeaderH2>
+      <HeaderH2>Third Time’s a Charm</HeaderH2>
     </HeaderWrap>
   );
 }
