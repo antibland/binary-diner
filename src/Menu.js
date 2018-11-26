@@ -26,6 +26,11 @@ const MenuListItemHeader = styled.h4`
   justify-content: space-between;
 `;
 
+const MenuPrice = styled.span`
+  font-weight: normal;
+  font-size: 90%;
+`;
+
 const CategoryTitle = styled.h3`
   font-family: 'Galada';
   color: var(--red);
@@ -134,7 +139,7 @@ function Menu() {
                     <NavLink to={`/menu/${items.componentName}`}>
                       {items.name}
                     </NavLink>
-                    <span className="price">{items.price}</span>
+                    <MenuPrice>{items.price}</MenuPrice>
                   </MenuListItemHeader>
                   <p>{items.description}</p>
                 </MenuListItemInner>
