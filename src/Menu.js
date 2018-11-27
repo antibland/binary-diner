@@ -12,6 +12,7 @@ const MenuList = styled.ul`
 
 const MenuListItemOuter = styled.li`
   margin-bottom: 1.5rem;
+  display: inline-block;
 
   p {
     line-height: 1.4;
@@ -43,6 +44,22 @@ const MenuListItemHeader = styled.h4`
     text-transform: uppercase;
     color: black;
     text-shadow: 0 1px 1px var(--green);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid var(--green);
+      transition: 0.3s width;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
   }
 `;
 
