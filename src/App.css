@@ -37,6 +37,7 @@ body {
   background-position: -560px 100px;
   background-repeat: repeat-y;
   background-color: transparent;
+  background-attachment: fixed;
 }
 
 .App {
@@ -50,7 +51,7 @@ body {
 
 main {
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   margin: 1rem;
   border: 2px solid var(--green);
   position: relative;

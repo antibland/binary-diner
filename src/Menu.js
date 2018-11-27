@@ -12,6 +12,15 @@ const MenuList = styled.ul`
 
 const MenuListItemOuter = styled.li`
   margin-bottom: 1.5rem;
+
+  p {
+    line-height: 1.4;
+  }
+
+  img {
+    float: left;
+    margin: 6px 8px 5px 0;
+  }
 `;
 
 const MenuListItemInner = styled.li`
@@ -23,15 +32,61 @@ const MenuListItemInner = styled.li`
 
 const MenuListItemHeader = styled.h4`
   padding-bottom: 0.25rem;
-  text-align: center;
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 0.9rem;
+  justify-content: space-between;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0 1px 1px var(--green);
+  }
 `;
 
-const MenuPrice = styled.span`
-  font-weight: normal;
-  font-size: 90%;
+const MenuPrice = styled.div`
+  --width: 38px;
   background-color: var(--light-green);
-  border: 1px solid var(--green);
   padding: 3px;
+  top: -7px;
+  position: absolute;
+  width: var(--width);
+  height: var(--width);
+  text-align: center;
+  transform: rotate(12deg);
+  right: 0;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--width);
+    width: var(--width);
+    background-color: var(--light-green);
+  }
+
+  &:before {
+    transform: rotate(30deg);
+  }
+
+  &:after {
+    transform: rotate(60deg);
+  }
+
+  span {
+    font-weight: normal;
+    font-size: 80%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
 `;
 
 const CategoryTitle = styled.h3`
@@ -73,15 +128,25 @@ const data = [
       {
         name: 'Animated Accordion',
         componentName: 'Accordion',
+        imgName: '/accordion.png',
         description:
           'No musical instruments here—it’s not that kind of accordion. Think FAQ items and panels of data that expand and contract when clicked. A staple of any well-rounded, e-commerce diet.',
         price: '$6.99',
+      },
+      {
+        name: 'Mel‘s Burger Menu',
+        componentName: 'Burger',
+        imgName: '/burger.png',
+        description:
+          'Somehow, hamburger menus are on every menu. And they‘ve been around since the early 80‘s.',
+        price: '$9.50',
       },
     ],
   },
 ];
 
 function Menu() {
+  const Image = props => <img alt="" {...props} />;
   return (
     <>
       <MenuList>
@@ -96,10 +161,15 @@ function Menu() {
                     <NavLink to={`/menu/${items.componentName}`}>
                       {items.name}
                     </NavLink>
+                    <MenuPrice>
+                      <span>{items.price}</span>
+                    </MenuPrice>
                   </MenuListItemHeader>
-                  <p>{items.description}</p>
-                  <p style={{ textAlign: 'center', padding: '10px 0 0' }}>
-                    <MenuPrice>{items.price}</MenuPrice>
+                  <p>
+                    {items.imgName && (
+                      <Image width="32" height="32" src={items.imgName} />
+                    )}
+                    {items.description}
                   </p>
                 </MenuListItemInner>
               ))}
