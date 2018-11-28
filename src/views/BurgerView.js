@@ -1,5 +1,4 @@
 import React from 'react';
-import Highlight from 'react-highlight';
 import shared from '../css/shared';
 
 const ReasonList = shared.reasonList();
