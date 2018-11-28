@@ -1,44 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mel‘s Binary Diner
 
-## Available Scripts
+Welcome to the Mel‘s. I‘m Mel, the owner. Sit anywhere you‘d like. We‘re never very busy. Hungry? We only got like four things so far. They take time to make since Andy has a day job. Please be patient.
 
-In the project directory, you can run:
+## What is this about?
 
-### `npm start`
+I‘ll be Andy for a second and give ol‘ Mel a break. I‘ve worked on the web for twenty years now and keep seeing the same issues over and over…and over again. Everyone knows there is amazing documentation out there and that we should all be thoroughly reading every second. We know we need to read more! The thing is, documentation can be very dry and is not always the best way for people to learn. I‘m taking a different approach and sticking to this diner metaphor as a vehicle for learning. Hopefully you‘ll be a little offended at something you see here. Everything‘s so safe and watered-down these days.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Contributing?
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Mel here. Like I says, these examples take some time to cook up. Why don‘t you get off your keister and help out for once? The Diner was built using React, whatever that is, and doesn‘t use Redux, whatever that is. It sounds a lot like acid reflux, a condition from which I suffer. We‘re looking for dishes that are done wrong over and over, for years, but should be right by now. Think of practical examples that can help a lot of people when cooked right. I gotta get back to the kitchen, kid. Thanks for coming to Mel‘s. Tip your waiter and star us on GitHub.
