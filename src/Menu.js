@@ -151,11 +151,11 @@ const data = [
         price: '$6.99',
       },
       {
-        name: 'Mel‘s Burger Menu',
+        name: 'Mel‘s Hamburger Menu',
         componentName: 'Burger',
         imgName: '/burger.png',
         description:
-          'Somehow, hamburger menus are on every menu. And they‘ve been around since the early 80‘s.',
+          'The hamburger menu is a website‘s junk drawer. Yet somehow, hamburger menus are on everyone‘s menu. And they‘ve been around since the early 80s! I guess it‘s the best we can do. If you use one, make sure to do it right.',
         price: '$9.50',
       },
     ],
