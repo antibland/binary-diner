@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import utilities from './utilities';
+import data from './menuData';
 
 const MenuList = styled.ul`
   flex-grow: 1;
@@ -121,46 +122,6 @@ const CategoryDescription = styled.p`
     padding: 0 .5em;
   `}
 `;
-
-const data = [
-  {
-    category: 'Breakfast',
-    description:
-      'A greasy but tasty array of items. Please tip your waiter or waitress.',
-    items: [
-      {
-        name: 'Button',
-        componentName: 'Button',
-        description:
-          'When done properly, a sumptuous union of form and function. When done poorly, a disappointing mess.',
-        price: '$4.50',
-      },
-    ],
-  },
-  {
-    category: 'Lunch',
-    description:
-      'What can we say? Lunch is a critical activity in any workplace. Don`t miss it',
-    items: [
-      {
-        name: 'Animated Accordion',
-        componentName: 'Accordion',
-        imgName: '/accordion.png',
-        description:
-          'No musical instruments here—it’s not that kind of accordion. Think FAQ items and panels of data that expand and contract when clicked. A staple of any well-rounded, e-commerce diet.',
-        price: '$6.99',
-      },
-      {
-        name: 'Mel‘s Hamburger Menu',
-        componentName: 'Burger',
-        imgName: '/burger.png',
-        description:
-          'The hamburger menu is a website‘s junk drawer. Yet somehow, hamburger menus are on everyone‘s menu. And they‘ve been around since the early 80s! I guess it‘s the best we can do. If you use one, make sure to do it right.',
-        price: '$9.50',
-      },
-    ],
-  },
-];
 
 function Menu() {
   const Image = props => <img alt="" {...props} />;
