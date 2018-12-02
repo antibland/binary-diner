@@ -24,7 +24,7 @@ const data = [
   {
     category: 'Lunch',
     description:
-      'What can we say? Lunch is a critical activity in any workplace. Don`t miss it',
+      'Without lunch, the universe would unravel into a pool of partially-cooked pancake batter.',
     items: [
       {
         name: 'Animated Accordion',
