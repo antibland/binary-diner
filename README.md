@@ -1,11 +1,77 @@
 # Mel‘s Binary Diner
 
-Welcome to Mel‘s. I‘m Mel, the owner. Sit anywhere you‘d like. We‘re never very busy. Hungry? We only got like four things so far. They take time to make since Andy has a day job. Please be patient.
+This project is a learning tool delivered through the metaphor of a greasy spoon diner. It focuses on pain points and use-cases I've noticed while working in the enterprise, e-commerce world. Did I kill the mystique for you yet? In the nearly twenty years I‘ve spent building things for the web, I‘ve encountered the same issues, misconceptions and mistakes over and over…and over again (I‘ve made my fair share). For personal projects, these mistakes often have minimal impact; the enterprise world is a less forgiving place. Wrong turns break budgets.
 
-## What is this about?
+Despite the fact that great documentation exists for the technologies we use, it‘s often not enough to spread education. In fact, if documentation was all we ever needed, Stack Overflow would not be a thing. Many of us learn better by example. One size of learning does not fit all.
 
-I‘ll be Andy for a second and give ol‘ Mel a break. I‘ve worked on the web for twenty years now and keep seeing the same issues over and over…and over again. Everyone knows there is amazing documentation out there that we should all be reading every second. We know we need to read more! The thing is, documentation can be very dry and is not always the best way for people to learn. I‘m taking a different approach and sticking to this diner metaphor as a vehicle for learning. Hopefully you‘ll be a little offended at something you see here. Everything‘s so safe and watered-down these days.
+## Running it locally
+
+```
+$ git clone https://github.com/antibland/binary-diner.git
+$ cd binary-diner
+$ yarn install
+$ yarn start
+```
+
+You should now be running on `localhost:3000`.
 
 ## Contributing?
 
-Mel here. Like I says, these examples take some time to cook up. Why don‘t you get off your keister and help out for once? The Diner was built using React, whatever that is, and doesn‘t use Redux, whatever that is. It sounds a lot like acid reflux, a condition from which I suffer. We‘re looking for dishes that are done wrong over and over, for years, but should be right by now. Think of practical examples that can help a lot of people when cooked right. I gotta get back to the kitchen, kid. Thanks for coming to Mel‘s. Tip your waiter and star us on GitHub.
+Our menu needs new dishes which have been done wrong for many years, but which can be solved using a straightforward, modern approach. Think of practical examples which can help a lot of people when cooked right. Show before and after examples via [CodePen](https://codepen.io/).
+
+### Coding style
+
+I use ESLint with Prettier extensions. If your environment is working properly, your code should be formatted each time you initiate a save. Have a look at my [.eslintrc](https://github.com/antibland/binary-diner/blob/master/.eslintrc) for more details.
+
+### Writing styles
+
+For the CodePen examples, please use plain `CSS`. Within the React component, you shouldn't need to add new styles. Copy one of the other views as a starting point.
+
+### Highlighting code
+
+When highlighting code within your new view component, I use a [react-highlight](https://github.com/akiran/react-highlight). Usage is pretty straightforward:
+
+```
+<Highlight className="html">{`<button>
+  Click here
+</button>`}</Highlight>
+```
+
+The formatting can be a little awkward between the backticks, but that‘s how template strings work in ES6.
+
+
+### How do I add a dish to the menu?
+
+1. There is an array of objects in `src/menuData.js`. Add an item to the breakfast or lunch object. For instance:
+
+```
+{
+  name: 'New Thing',
+  componentName: 'NewThing',
+  imgName: '/optionalMenuImage.png',
+  description:
+    'We fly in the finest third-party image zoom plugins and prepare them to order. We are not responsible for customers experiencing heartburn or indigestion.',
+  price: '$5.50',
+},
+```
+
+2. Add your view to `views`. The name of the file should match the beginning of `componentName`.
+
+3. Update `views/index.js` with the new lazy-loaded view reference and export it:
+
+```
+const NewThingView = lazy(() => import('./NewThingView'));
+export { ButtonView, AccordionView, BurgerView, NewThingView };
+```
+
+## Built With
+
+- [Create React App](https://github.com/facebook/create-react-app)
+
+## License
+
+MIT
+
+## A message from Mel
+
+Thanks for coming to Mel‘s, kid. We ain‘t perfect, but do try our hardest to please you. Please tip your waiter and star us on GitHub.
