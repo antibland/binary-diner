@@ -23,9 +23,9 @@ Our menu needs new dishes which have been done wrong for many years, but which c
 
 I use ESLint with Prettier extensions. If your environment is working properly, your code should be formatted each time you initiate a save. Have a look at my [.eslintrc](https://github.com/antibland/binary-diner/blob/master/.eslintrc) for more details.
 
-### Writing styles
+### Regarding CSS
 
-For the CodePen examples, please use plain `CSS`. Within the React component, you shouldn't need to add new styles. Copy one of the other views as a starting point.
+For the CodePen examples, please use plain `CSS`. Within the React component, you shouldn't need to add new styles. Copy one of the other views as a starting point. If you feel you must add new CSS to the component, please do so using styled components.
 
 ### Highlighting code
 
