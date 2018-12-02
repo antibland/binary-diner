@@ -21,6 +21,15 @@ function Main() {
         Consuming raw or undercooked <code>JavaScript</code>, <code>CSS</code>{' '}
         or <code>HTML</code> may increase your risk of codeborne illness.
       </Warning>
+      <iframe
+        title="GitHub Stars"
+        src="https://ghbtns.com/github-btn.html?user=antibland&repo=binary-diner&type=star&count=true&size=large"
+        frameBorder="0"
+        scrolling="0"
+        width="160px"
+        height="30px"
+        style={{ margin: '0 auto' }}
+      />
     </main>
   );
 }
