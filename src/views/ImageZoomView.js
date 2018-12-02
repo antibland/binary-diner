@@ -47,7 +47,7 @@ const ImageZoomView = () => (
           would take to build it in-house.
         </ReasonListItem>
         <ReasonListItem>
-          If IE11 is not in your project‘s browser support tree,
+          If IE11 is not in your project’s browser support tree,
           <em> definitely</em> consider using modern browser technologies to
           solve the problem in-house.
         </ReasonListItem>
@@ -75,7 +75,7 @@ const ImageZoomView = () => (
 
       <Highlight className="javascript">
         {`
-// 1. Track the user‘s mouse movement within the image container.
+// 1. Track the user’s mouse movement within the image container.
 
   const el = document.querySelector('.zoomify');
   el.addEventListener('mousemove', handleMouseMove, false);

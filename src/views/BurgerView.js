@@ -106,11 +106,11 @@ const BurgerView = () => (
           Organize your HTML so that a hidden checkbox is a parent to your
           navigation. Create two labels, both pointing to the <code>id</code> of
           the hidden checkbox. The first label will serve as the hambuger toggle
-          button. The second label will be the menu‘s close button.
+          button. The second label will be the menu’s close button.
         </ReasonListItem>
         <ReasonListItem>
           The two-label approach lets us use a single checkbox to control our
-          mobile navigation. We‘ve also avoided using <code>:target</code>,
+          mobile navigation. We’ve also avoided using <code>:target</code>,
           which means there's sudden page jump to suppress. The two-label
           approach works especially well when a fixed header is employed, as in
           the second demo.

@@ -1,8 +1,8 @@
-# Mel‘s Binary Diner
+# Mel’s Binary Diner
 
-This project is a learning tool delivered through the metaphor of a greasy spoon diner. It focuses on pain points and use-cases I've noticed while working in the enterprise, e-commerce world. Did I kill the mystique for you yet? In the nearly twenty years I‘ve spent building things for the web, I‘ve encountered the same issues, misconceptions and mistakes over and over…and over again (I‘ve made my fair share). For personal projects, these mistakes often have minimal impact; the enterprise world is a less forgiving place. Wrong turns break budgets.
+This project is a learning tool delivered through the metaphor of a greasy spoon diner. It focuses on pain points and use-cases I've noticed while working in the enterprise, e-commerce world. Did I kill the mystique for you yet? In the nearly twenty years I’ve spent building things for the web, I’ve encountered the same issues, misconceptions and mistakes over and over…and over again (I’ve made my fair share). For personal projects, these mistakes often have minimal impact; the enterprise world is a less forgiving place. Wrong turns break budgets.
 
-Despite the fact that great documentation exists for the technologies we use, it‘s often not enough to spread education. In fact, if documentation was all we ever needed, Stack Overflow would not be a thing. Many of us learn better by example. One size of learning does not fit all.
+Despite the fact that great documentation exists for the technologies we use, it’s often not enough to spread education. In fact, if documentation was all we ever needed, Stack Overflow would not be a thing. Many of us learn better by example. One size of learning does not fit all.
 
 ## Running it locally
 
@@ -37,7 +37,7 @@ When highlighting code within your new view component, I use a [react-highlight]
 </button>`}</Highlight>
 ```
 
-The formatting can be a little awkward between the backticks, but that‘s how template strings work in ES6.
+The formatting can be a little awkward between the backticks, but that’s how template strings work in ES6.
 
 
 ### How do I add a dish to the menu?
@@ -74,4 +74,4 @@ MIT
 
 ## A message from Mel
 
-Thanks for coming to Mel‘s, kid. We ain‘t perfect, but do try our hardest to please you. Please tip your waiter and star us on GitHub.
+Thanks for coming to Mel’s, kid. We ain’t perfect, but do try our hardest to please you. Please tip your waiter and star us on GitHub.
