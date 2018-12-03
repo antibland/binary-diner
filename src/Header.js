@@ -16,10 +16,9 @@ const HeaderWrap = styled.header`
 `;
 
 const LogoImg = styled.img`
-  img {
-    max-width: 100%;
-    width: 498px;
-  }
+  max-width: 100%;
+  width: 498px;
+  height: auto;
 `;
 
 const HeaderH1 = styled.h1`
