@@ -83,7 +83,7 @@ const shared = {
     box-shadow: 2px 5px 10px var(--smoke);
     margin: 10px auto;
     color: #fff;
-    background-color: var(--red);
+    background-color: var(--torch-red);
 
     &:hover {
       transition: all 150ms linear;

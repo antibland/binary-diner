@@ -8,49 +8,40 @@ const HeaderWrap = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0.5rem 10vw 0;
+
+  ${utilities.media.small`
+    padding: 1rem 15vw 0;
+  `}
+`;
+
+const LogoImg = styled.img`
+  img {
+    max-width: 100%;
+    width: 498px;
+  }
 `;
 
 const HeaderH1 = styled.h1`
-  font-family: 'Galada';
-  color: var(--red);
-  font-size: 2.2rem;
-  font-style: italic;
-  line-height: 1;
-  padding-top: 2rem;
-
   a {
     text-decoration: none;
-    color: inherit;
+    display: block;
   }
-
-  ${utilities.media.small`
-    font-size: 3.5rem;
-  `}
-
-  ${utilities.media.medium`
-    font-size: 4.5rem;
-  `}
-
-  ${utilities.media.large`
-    font-size: 6rem;
-  `}
-`;
-
-const HeaderH2 = styled.h2`
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  word-spacing: 2px;
-  font-size: 1rem;
-  font-style: italic;
 `;
 
 function Header() {
   return (
     <HeaderWrap>
       <HeaderH1>
-        <NavLink to="/">*Mel’s Binary Diner*</NavLink>
+        <NavLink to="/" title="Mel’s Binary Diner">
+          <LogoImg
+            src="/logo.png"
+            srcSet="/logo.png 1x, /logo@2x.png 2x, /logo@3x.png 3x"
+            alt="Mel's Binary Diner logo"
+          />
+          <span className="visuallyHidden">Mel's Binary Diner</span>
+        </NavLink>
       </HeaderH1>
-      <HeaderH2>Third Time’s a Charm</HeaderH2>
     </HeaderWrap>
   );
 }

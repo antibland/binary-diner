@@ -17,6 +17,14 @@ html {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'cookieregular';
+  src: url('/fonts/cookie-regular-webfont.woff2') format('woff2'),
+       url('/fonts/cookie-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 ul li {
   list-style: none;
 }
@@ -26,10 +34,18 @@ html {
 }
 
 :root {
-  --red: rgb(241, 9, 10);
+  --torch-red: #fd0e35;
+  --candy-corn: #fbec5d;
   --light-green: rgb(204, 235, 230);
   --green: rgb(153, 216, 206);
   --smoke: #e4e4e4;
+}
+
+.visuallyHidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 body {
@@ -47,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  background-color: rgba(251, 236, 93, .8);
 }
 
 main {
@@ -57,6 +74,7 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 main:after {

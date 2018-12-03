@@ -45,6 +45,7 @@ const MenuListItemHeader = styled.h4`
     text-transform: uppercase;
     color: black;
     text-shadow: 0 1px 1px var(--green);
+    font-size: 0.92rem;
     position: relative;
 
     &::after {
@@ -108,11 +109,18 @@ const MenuPrice = styled.div`
 `;
 
 const CategoryTitle = styled.h3`
-  font-family: 'Galada';
-  color: var(--red);
+  font-family: 'cookieregular';
+  color: var(--torch-red);
   text-align: center;
-  font-size: 26px;
-  margin-bottom: -6px;
+  font-size: 2.2rem;
+
+  ${utilities.media.small`
+    font-size: 2.7rem;
+  `}
+
+  ${utilities.media.medium`
+    font-size: 3.1rem;
+  `}
 `;
 
 const CategoryDescription = styled.p`
