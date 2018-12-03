@@ -1,4 +1,4 @@
-# Mel’s Binary Diner
+![Alt text](public/full_logo_w_color_bg.png?raw=true "Mel's Binary Diner")
 
 This project is a learning tool delivered through the metaphor of a greasy spoon diner. It focuses on pain points and use-cases I've noticed while working in the enterprise, e-commerce world. Did I kill the mystique for you yet? In the nearly twenty years I’ve spent building things for the web, I’ve encountered the same issues, misconceptions and mistakes over and over…and over again (I’ve made my fair share). For personal projects, these mistakes often have minimal impact; the enterprise world is a less forgiving place. Wrong turns break budgets.
 
