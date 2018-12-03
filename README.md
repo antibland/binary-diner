@@ -64,6 +64,20 @@ const NewThingView = lazy(() => import('./NewThingView'));
 export { ButtonView, AccordionView, BurgerView, NewThingView };
 ```
 
+### How do I chat with the waiter using my own image?
+
+Add a small, optimized image to `/public` and reference it in the chat log:
+
+```
+<ul className="log">
+  …
+  <li className="entry mine">
+    <img src="/yourCustomImage.jpg" alt="" className="avatar" />
+    <p className="message">Hey, waiter. Listen up!</p>
+  </li>
+</ul>
+```
+
 ## Built With
 
 - [Create React App](https://github.com/facebook/create-react-app)
