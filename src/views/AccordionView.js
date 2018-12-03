@@ -47,7 +47,7 @@ const AccordionView = () => (
 
       <ReasonList>
         <ReasonListItem>
-          A 100 JS file takes longer to process than a 100KB JPG. We have to
+          A 100KB JS file takes longer to process than a 100KB JPG. We have to
           consider{' '}
           <a
             href="https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e"
