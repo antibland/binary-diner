@@ -13,7 +13,10 @@ const MenuList = styled.ul`
 
 const MenuListItemOuter = styled.li`
   margin-bottom: 1.5rem;
-  display: inline-block;
+
+  &:last-child {
+    display: inline-block;
+  }
 
   p {
     line-height: 1.4;

@@ -88,3 +88,10 @@ main:after {
   right: 3px;
   bottom: 3px;
 }
+
+@media screen and (min-width: 1000px) {
+  .App {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 4px 4px rgba(0,0,0,0.05);
+  }
+}
