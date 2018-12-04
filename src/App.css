@@ -54,6 +54,7 @@ body {
   background-repeat: repeat-y;
   background-color: transparent;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .App {
@@ -63,7 +64,20 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-color: rgba(251, 236, 93, .8);
+  background-color: var(--candy-corn);
+  position: relative;
+}
+
+.hand {
+  display: none;
+  position: absolute;
+  width: 700px;
+  left: 835px;
+  z-index: -1;
+}
+
+.hand img {
+  width: 100%;
 }
 
 main {
@@ -93,5 +107,9 @@ main:after {
   .App {
     margin-bottom: 1.5rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 4px 4px rgba(0,0,0,0.05);
+  }
+
+  .hand {
+    display: block;
   }
 }

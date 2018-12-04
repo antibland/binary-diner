@@ -9,6 +9,14 @@ class App extends Component {
       <div className="App">
         <Header />
         <Main />
+        <div className="hand">
+          <img
+            aria-hidden="true"
+            src="/hand.png"
+            srcSet="/hand.png 1x, /hand@2x.png 2x"
+            alt=""
+          />
+        </div>
       </div>
     );
   }
