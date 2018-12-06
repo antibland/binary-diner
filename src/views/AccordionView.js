@@ -53,6 +53,7 @@ const AccordionView = () => (
             href="https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e"
             rel="noopener noreferrer"
             target="_blank"
+            className="standard"
           >
             The Cost of Javascript
           </a>

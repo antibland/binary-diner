@@ -61,6 +61,7 @@ const BurgerView = () => (
             href="https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/"
             rel="noopener noreferrer"
             target="_blank"
+            className="standard"
           >
             old, awesome post
           </a>{' '}

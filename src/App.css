@@ -57,6 +57,12 @@ body {
   overflow-x: hidden;
 }
 
+a.standard {
+  text-decoration: none;
+  color: var(--torch-red);
+  border-bottom: 1px solid currentColor;
+}
+
 .App {
   min-height: 100vh;
   width: 960px;
