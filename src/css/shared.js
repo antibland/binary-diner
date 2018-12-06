@@ -29,6 +29,7 @@ const shared = {
     margin-bottom: 2.2em;
     padding: 1.5em;
     background-color: #eaeaea;
+    box-shadow: 0 10px 12px -11px rgba(0, 0, 0, 0.4);
 
     &:before {
       position: absolute;
@@ -47,19 +48,6 @@ const shared = {
       content: counter(li-counter);
       counter-increment: li-counter;
       animation: 0.5s twistIt forwards 0.75s;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      bottom: -3px;
-      width: 94%;
-      left: 50%;
-      margin-left: -47%;
-      height: 30px;
-      box-shadow: 0 16px 30px -5px rgba(0, 0, 0, 0.4);
-      transform: perspective(800px) rotateY(0deg) rotateX(45deg);
     }
   `,
 
