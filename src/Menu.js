@@ -77,7 +77,7 @@ const MenuPrice = styled.div`
   width: var(--width);
   height: var(--width);
   text-align: center;
-  transform: rotate(12deg);
+  transform: rotate(12deg) translateZ(0);
   right: 0;
 
   &::before,
