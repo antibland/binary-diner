@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import utilities from './utilities';
+import Logo from './Logo';
 
 const HeaderWrap = styled.header`
   flex-grow: 0;
@@ -13,12 +14,6 @@ const HeaderWrap = styled.header`
   ${utilities.media.small`
     padding: 1rem 15vw 0;
   `}
-`;
-
-const LogoImg = styled.img`
-  max-width: 100%;
-  width: 498px;
-  height: auto;
 `;
 
 const HeaderH1 = styled.h1`
@@ -33,11 +28,7 @@ function Header() {
     <HeaderWrap>
       <HeaderH1>
         <NavLink to="/" title="Mel’s Binary Diner">
-          <LogoImg
-            src="/logo.png"
-            srcSet="/logo.png 1x, /logo@2x.png 2x, /logo@3x.png 3x"
-            alt="Mel's Binary Diner logo"
-          />
+          <Logo />
           <span className="visuallyHidden">Mel's Binary Diner</span>
         </NavLink>
       </HeaderH1>

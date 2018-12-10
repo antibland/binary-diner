@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Main from './Main';
+import Hand from './Hand';
 import './App.css';
 
 class App extends Component {
@@ -9,14 +10,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Main />
-        <div className="hand">
-          <img
-            aria-hidden="true"
-            src="/hand.png"
-            srcSet="/hand.png 1x, /hand@2x.png 2x"
-            alt=""
-          />
-        </div>
+        <Hand />
       </div>
     );
   }
