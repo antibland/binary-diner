@@ -44,18 +44,24 @@ const MenuListItemHeader = styled.h4`
   position: relative;
 
   a {
+    --offset: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     text-shadow: 0 1px 1px var(--green);
     font-size: 0.92rem;
     position: relative;
+    padding-left: 1.3rem;
+    background-image: url('link.png');
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
 
     &::after {
       content: '';
       position: absolute;
       bottom: -2px;
-      left: 0;
+      left: var(--offset);
       width: 0%;
       border-bottom: 2px solid var(--green);
       transition: 0.3s width;
@@ -63,7 +69,7 @@ const MenuListItemHeader = styled.h4`
 
     &:hover::after,
     &:focus::after {
-      width: 100%;
+      width: calc(100% - var(--offset));
     }
   }
 `;
@@ -77,8 +83,7 @@ const MenuPrice = styled.div`
   width: var(--width);
   height: var(--width);
   text-align: center;
-  transform: rotate(12deg) translateZ(0);
-  right: 2px;
+  right: 4px;
 
   &::before,
   &::after {
@@ -106,7 +111,7 @@ const MenuPrice = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(12deg);
     z-index: 2;
   }
 `;
