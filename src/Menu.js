@@ -52,7 +52,7 @@ const MenuListItemHeader = styled.h4`
     font-size: 0.92rem;
     position: relative;
     padding-left: 1.3rem;
-    background-image: url('link.png');
+    background-image: url('/link.png');
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-size: 16px 16px;
