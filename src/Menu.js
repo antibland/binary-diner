@@ -44,33 +44,35 @@ const MenuListItemHeader = styled.h4`
   position: relative;
 
   a {
-    --offset: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     text-shadow: 0 1px 1px var(--green);
-    font-size: 0.92rem;
+    font-size: 1rem;
     position: relative;
-    padding-left: 1.3rem;
-    background-image: url('/link.png');
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
 
     &::after {
       content: '';
       position: absolute;
-      bottom: -2px;
-      left: var(--offset);
-      width: 0%;
-      border-bottom: 2px solid var(--green);
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      border-bottom: 3px solid var(--green);
       transition: 0.3s width;
     }
 
     &:hover::after,
     &:focus::after {
-      width: calc(100% - var(--offset));
+      width: 100%;
     }
+
+    ${utilities.media.small`
+      font-size: 0.92rem;
+
+      &::after {
+        width: 0%;
+      }
+    `}
   }
 `;
 
@@ -120,11 +122,7 @@ const CategoryTitle = styled.h3`
   font-family: 'cookieregular';
   color: var(--torch-red);
   text-align: center;
-  font-size: 2.2rem;
-
-  ${utilities.media.small`
-    font-size: 2.7rem;
-  `}
+  font-size: 2.7rem;
 
   ${utilities.media.medium`
     font-size: 3.1rem;
