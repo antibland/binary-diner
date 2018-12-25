@@ -110,9 +110,9 @@ const BurgerView = () => (
           button. The second label will be the menu’s close button.
         </ReasonListItem>
         <ReasonListItem>
-          The two-label approach lets us use a single checkbox to control our
-          mobile navigation. We’ve also avoided using <code>:target</code>,
-          which means there's sudden page jump to suppress. The two-label
+          The two-label approach allows us to control our mobile navigation
+          using a single checkbox. We’ve also avoided using <code>:target</code>
+          , which means there's no sudden page jump to suppress. The two-label
           approach works especially well when a fixed header is employed, as in
           the second demo.
         </ReasonListItem>
