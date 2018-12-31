@@ -30,9 +30,69 @@ const MenuListItemOuter = styled.li`
 
 const MenuListItemInner = styled.li`
   margin-bottom: 1.5rem;
+  position: relative;
+  cursor: pointer;
   ${utilities.media.medium`
     padding: 0 .5em;
   `}
+
+  &:hover {
+    .menuListItemHeaderLink {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+`;
+
+const MenuListItemWrapperLink = styled(NavLink)`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  outline: none;
+  &:focus {
+    & + h4 .menuListItemHeaderLink {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+`;
+
+const MenuListItemHeaderLink = styled(NavLink)`
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 0 1px 1px var(--green);
+  font-size: 1rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid var(--green);
+    transition: 0.3s width;
+  }
+
+  &:focus {
+    outline: none;
+    &::after {
+      width: 100%;
+    }
+  }
+
+  ${utilities.media.small`
+      font-size: 0.92rem;
+
+      &::after {
+        width: 0%;
+      }
+    `}
 `;
 
 const MenuListItemHeader = styled.h4`
@@ -42,42 +102,12 @@ const MenuListItemHeader = styled.h4`
   padding-bottom: 0.9rem;
   justify-content: space-between;
   position: relative;
-
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    text-shadow: 0 1px 1px var(--green);
-    font-size: 1rem;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      width: 100%;
-      border-bottom: 3px solid var(--green);
-      transition: 0.3s width;
-    }
-
-    &:hover::after,
-    &:focus::after {
-      width: 100%;
-    }
-
-    ${utilities.media.small`
-      font-size: 0.92rem;
-
-      &::after {
-        width: 0%;
-      }
-    `}
-  }
 `;
 
 const MenuPrice = styled.div`
   --width: 38px;
+  user-select: none;
+  pointer-events: none;
   background-color: var(--light-green);
   padding: 3px;
   top: -7px;
@@ -149,10 +179,17 @@ function Menu() {
             <ul>
               {section.items.map((items, itemsIndex) => (
                 <MenuListItemInner key={itemsIndex}>
+                  <MenuListItemWrapperLink
+                    tabIndex="0"
+                    to={`/menu/${items.componentName}`}
+                  />
                   <MenuListItemHeader>
-                    <NavLink to={`/menu/${items.componentName}`}>
+                    <MenuListItemHeaderLink
+                      className="menuListItemHeaderLink"
+                      to={`/menu/${items.componentName}`}
+                    >
                       {items.name}
-                    </NavLink>
+                    </MenuListItemHeaderLink>
                     <MenuPrice>
                       <span>{items.price}</span>
                     </MenuPrice>
