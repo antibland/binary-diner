@@ -39,7 +39,7 @@ const AccordionView = () => (
           We are but a lowly diner, monsieur, not some Michelin Star outfit.
         </EntryTheirs>
         <EntryMine>
-          Please try harder. While the chef fixes things up, I'll go on social
+          Please try harder. While the chef fixes things up, I'll hop on social
           media and start feeling lousy.
         </EntryMine>
       </ul>
