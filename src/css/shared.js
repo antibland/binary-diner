@@ -90,9 +90,7 @@ const shared = {
   `,
 
   section: () => styled.section`
-    ${utilities.media.medium`
-      padding: 1em;
-    `}
+    padding: 1em;
   `,
   sectionTitle: () => styled.h2`
     margin-bottom: 1rem;
