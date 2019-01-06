@@ -101,7 +101,7 @@ const AccordionView = () => (
         <ReasonListItem>
           Difficult to style. Those ugly arrows can be hidden via
           vendor-prefixed styles. Chrome ignores CSS transitions on the
-          `summary` element while Firefox seems to only transition opened,
+          &lt;summary&gt; element while Firefox seems to only transition opened,
           closing abruptly.
         </ReasonListItem>
       </ReasonList>

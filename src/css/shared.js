@@ -35,9 +35,9 @@ const shared = {
       position: absolute;
       top: -0.3em;
       left: -0.5em;
-      width: 1.8em;
-      height: 1.2em;
-      font-size: 1.5em;
+      width: 1.45em;
+      height: 1.3em;
+      font-size: 1.35em;
       line-height: 1.2;
       font-weight: bold;
       text-align: center;
