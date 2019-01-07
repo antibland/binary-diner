@@ -36,8 +36,8 @@ function Main() {
         </Contribute>
       </>
       <Warning>
-        Consuming raw or undercooked <code>JavaScript</code>, <code>CSS</code>{' '}
-        or <code>HTML</code> may increase your risk of codeborne illness.
+        Consuming raw or undercooked JavaScript, CSS or HTML may increase your
+        risk of codeborne illness.
       </Warning>
       <iframe
         title="GitHub Stars"

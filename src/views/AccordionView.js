@@ -32,8 +32,8 @@ const AccordionView = () => (
       <ul className="log">
         <EntryMine>
           This accordion is inaccessible. It has no keyboard support whatsoever.
-          Also, there are <code>div</code>s everywhere. Surely the chef has more
-          semantic ingredients he could use.
+          Also, there are <code>&lt;div&gt;</code>s everywhere. Surely the chef
+          has more semantic ingredients he could use.
         </EntryMine>
         <EntryTheirs>
           We are but a lowly diner, monsieur, not some Michelin Star outfit.
@@ -56,7 +56,7 @@ const AccordionView = () => (
 
     <Section>
       <SectionTitle>
-        Option #1: <code>&lt;details&gt;</code> &amp;{' '}
+        Option #1: <code>&lt;details&gt;</code> and
         <code>&lt;summary&gt;</code>
       </SectionTitle>
       <iframe
@@ -119,7 +119,7 @@ const AccordionView = () => (
 
     <Section>
       <SectionTitle>
-        Option #2: <code>aria-expanded</code> &amp; <code>aria-hidden</code>
+        Option #2: <code>aria-expanded</code> and <code>aria-hidden</code>
       </SectionTitle>
       <iframe
         height="300"
