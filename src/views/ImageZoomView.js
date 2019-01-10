@@ -1,6 +1,8 @@
 import React from 'react';
 import Highlight from 'react-highlight';
 import shared from '../css/shared';
+import EntryMine from '../EntryMine';
+import EntryTheirs from '../EntryTheirs';
 
 const ReasonList = shared.reasonList();
 const ReasonListItem = shared.reasonListItem();
@@ -11,29 +13,17 @@ const ImageZoomView = () => (
   <>
     <Section>
       <ul className="log">
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">What will it be this morning?</p>
-        </li>
-        <li className="entry mine">
-          <img src="/me.jpg" alt="" className="avatar" />
-          <p className="message">
-            I'm thinking about trying the Image Zoom. How is it prepared?
-          </p>
-        </li>
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">
-            Ah, well, it is prepared by a third party and brought in frozen.
-          </p>
-        </li>
-        <li className="entry mine">
-          <img src="/me.jpg" alt="" className="avatar" />
-          <p className="message">
-            I'm not eating some reheated crap. Take me to the kitchen. I'll cook
-            it myself.
-          </p>
-        </li>
+        <EntryTheirs>What will it be this morning?</EntryTheirs>
+        <EntryMine>
+          I'm thinking about trying the Image Zoom. How is it prepared?
+        </EntryMine>
+        <EntryTheirs>
+          Ah, well, it is prepared by a third party and brought in frozen.
+        </EntryTheirs>
+        <EntryMine>
+          I'm not eating some reheated crap. Take me to the kitchen. I'll cook
+          it myself.
+        </EntryMine>
       </ul>
 
       <ReasonList>

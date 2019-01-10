@@ -1,6 +1,8 @@
 import React from 'react';
 import Highlight from 'react-highlight';
 import shared from '../css/shared';
+import EntryMine from '../EntryMine';
+import EntryTheirs from '../EntryTheirs';
 
 const ReasonList = shared.reasonList();
 const ReasonListItem = shared.reasonListItem();
@@ -16,16 +18,10 @@ const ButtonView = () => (
 </a>`}</Highlight>
 
       <ul className="log">
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">
-            Enjoy your button, sir. What's that? You don't like it?
-          </p>
-        </li>
-        <li className="entry mine">
-          <img src="/me.jpg" alt="" className="avatar" />
-          <p className="message">I can't eat this! Tell the chef:</p>
-        </li>
+        <EntryTheirs>
+          Enjoy your button, sir. What's that? You don't like it?
+        </EntryTheirs>
+        <EntryMine>I can't eat this! Tell the chef:</EntryMine>
       </ul>
 
       <ReasonList>
@@ -52,21 +48,15 @@ const ButtonView = () => (
       </Highlight>
 
       <ul className="log">
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">
-            I've spoken to the chef, and he has made a fresh button for you.
-            Please like us on Yelp.
-          </p>
-        </li>
-        <li className="entry mine">
-          <img src="/me.jpg" alt="" className="avatar" />
-          <p className="message">
-            First, I hate Yelp. More importantly, I still can't eat this code.
-            This is not even a real button. Take these comments back to the
-            chef. Last try before I leave.
-          </p>
-        </li>
+        <EntryTheirs>
+          I've spoken to the chef, and he has made a fresh button for you.
+          Please like us on Yelp.
+        </EntryTheirs>
+        <EntryMine>
+          First, I hate Yelp. More importantly, I still can't eat this code.
+          This is not even a real button. Take these comments back to the chef.
+          Last try before I leave.
+        </EntryMine>
       </ul>
 
       <ReasonList>
@@ -90,13 +80,10 @@ const ButtonView = () => (
 </button>`}</Highlight>
 
       <ul className="log">
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">
-            The chef realizes he was doing a lot of needless work. This one is
-            on the house, as they say.
-          </p>
-        </li>
+        <EntryTheirs>
+          The chef realizes he was doing a lot of needless work. This one is on
+          the house, as they say.
+        </EntryTheirs>
       </ul>
     </Section>
   </>

@@ -66,15 +66,16 @@ export { ButtonView, AccordionView, BurgerView, NewThingView };
 
 ### How do I chat with the waiter using my own image?
 
-Add a small, optimized image to `/public` and reference it in the chat log:
+Add a small, [optimized](https://imageoptim.com/mac) image to `/public` and reference it through the `avatar` prop:
 
 ```
 <ul className="log">
-  …
-  <li className="entry mine">
-    <img src="/yourCustomImage.jpg" alt="" className="avatar" />
-    <p className="message">Hey, waiter. Listen up!</p>
-  </li>
+  <EntryMine avatar="/yourCustomImage.jpg">
+    Listen up, waiter!
+  </EntryMine>
+  <EntryTheirs>
+    Yes, monsieur?
+  </EntryTheirs>
 </ul>
 ```
 

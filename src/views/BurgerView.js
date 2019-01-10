@@ -1,5 +1,7 @@
 import React from 'react';
 import shared from '../css/shared';
+import EntryMine from '../EntryMine';
+import EntryTheirs from '../EntryTheirs';
 
 const ReasonList = shared.reasonList();
 const ReasonListItem = shared.reasonListItem();
@@ -28,23 +30,12 @@ const BurgerView = () => (
       </iframe>
 
       <ul className="log">
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">Your hamburger, monsieur.</p>
-        </li>
-        <li className="entry mine">
-          <img src="/me.jpg" alt="" className="avatar" />
-          <p className="message">
-            Is this a joke? Are you trying to poison me?
-          </p>
-        </li>
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">
-            You are so good at complaining! What feedback should I give the
-            kitchen?
-          </p>
-        </li>
+        <EntryTheirs>Your hamburger, monsieur.</EntryTheirs>
+        <EntryMine>Is this a joke? Are you trying to poison me?</EntryMine>
+        <EntryTheirs>
+          You are so good at complaining! What feedback should I give the
+          kitchen?
+        </EntryTheirs>
       </ul>
 
       <ReasonList>
@@ -89,17 +80,11 @@ const BurgerView = () => (
       </iframe>
 
       <ul className="log">
-        <li className="entry theirs">
-          <img src="/snob.jpg" alt="" className="avatar" />
-          <p className="message">
-            Once again, you have shown Mel a better way. He would like to offer
-            you 5% off a stale cookie.
-          </p>
-        </li>
-        <li className="entry mine">
-          <img src="/me.jpg" alt="" className="avatar" />
-          <p className="message">Is it gluten-free?</p>
-        </li>
+        <EntryTheirs>
+          Once again, you have shown Mel a better way. He would like to offer
+          you 5% off a stale cookie.
+        </EntryTheirs>
+        <EntryMine>Is it gluten-free?</EntryMine>
       </ul>
 
       <ReasonList>
