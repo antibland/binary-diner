@@ -13,4 +13,6 @@ code {
     monospace;
     font-size: 80%;
     font-weight: bold;
+    background-color: hsla(60, 100%, 50%, .5);
+    padding: 2px 4px;
 }
