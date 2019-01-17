@@ -173,8 +173,7 @@ const AccordionView = () => (
         <EntryMine>But is it accessible?</EntryMine>
         <Mel>
           Well, no. Not by default. That's where those lines of JavaScript come
-          in. Adding those few lines above give us basic keyboard accessibility
-          and make things screenreader-friendly.
+          in. Adding those few lines makes things screenreader-friendly.
         </Mel>
       </ul>
     </Section>
@@ -198,8 +197,8 @@ const AccordionView = () => (
           closed panels.
         </ReasonListItem>
         <ReasonListItem>
-          In your CSS, use the value of <code>aria-selected</code> to control
-          the opened and closed state of the panels.
+          In your CSS, leverage the value of <code>aria-expanded</code> to
+          control the opened and closed state of each panel.
         </ReasonListItem>
       </ReasonList>
     </Section>
