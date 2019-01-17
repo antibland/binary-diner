@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function EntryTheirs(props) {
-  const { children } = props;
+  const { children, avatar } = props;
   return (
     <li className="entry theirs">
-      <img src="/snob.jpg" alt="" className="avatar" />
+      <img src={avatar} alt="" className="avatar" />
       <p className="message">{children}</p>
     </li>
   );
@@ -13,6 +13,11 @@ function EntryTheirs(props) {
 
 EntryTheirs.propTypes = {
   children: PropTypes.string,
+  avatar: PropTypes.string,
+};
+
+EntryTheirs.defaultProps = {
+  avatar: '/snob.jpg',
 };
 
 export default EntryTheirs;

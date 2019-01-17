@@ -8,6 +8,12 @@ const ReasonListItem = shared.reasonListItem();
 const Section = shared.section();
 const SectionTitle = shared.sectionTitle();
 
+const Mel = props => {
+  // eslint-disable-next-line
+  const { children } = props;
+  return <EntryTheirs avatar="/robot.png">{children}</EntryTheirs>;
+};
+
 const AccordionView = () => (
   <>
     <Section>
@@ -42,11 +48,9 @@ const AccordionView = () => (
           Please try harder. While the chef fixes things up, I'll hop on social
           media and start feeling lousy.
         </EntryMine>
-      </ul>
-      <ul className="log">
         <EntryTheirs>
-          Ah, you are in luck today. The chef is inspired and has prepared you{' '}
-          <em>two</em> options! Each one has its pros and cons.
+          I am back, and you are in luck today. The chef is inspired and has
+          prepared you <em>two</em> options! Each one has its pros and cons.
         </EntryTheirs>
         <EntryMine>
           Can you describe the first option? Quickly, I'm feeling lightheaded.
@@ -85,35 +89,49 @@ const AccordionView = () => (
           It looks delicious, but is it too good to be true? What are the pros
           and cons of this approach?
         </EntryMine>
-      </ul>
-
-      <h3 className="centeredHeader">Pros</h3>
-      <ReasonList>
-        <ReasonListItem>No JavaScript necessary.</ReasonListItem>
-        <ReasonListItem>Totally accessible out of the box.</ReasonListItem>
-      </ReasonList>
-
-      <h3 className="centeredHeader">Cons</h3>
-      <ReasonList>
-        <ReasonListItem>
-          No IE, IE Mobile, or Edge support. Polyfills exist.
-        </ReasonListItem>
-        <ReasonListItem>
-          Difficult to style. Those ugly arrows can be hidden via
-          vendor-prefixed styles. Chrome ignores CSS transitions on the
-          &lt;summary&gt; element while Firefox seems to only transition opened,
-          closing abruptly.
-        </ReasonListItem>
-      </ReasonList>
-
-      <ul className="log">
+        <Mel>Hey, guys.</Mel>
+        <EntryMine>Gah! What…are you?</EntryMine>
+        <Mel>
+          I'm Mel. I'm a crude, free image found on a DuckDuckGo search at 1AM.
+          I'm here to tell the truth about things.
+        </Mel>
         <EntryMine>
-          Not bad, but I need IE support, so let's hear about option 2.
+          I guess I'll have to accept this. Tell me about the pros and cons of
+          this approach.
         </EntryMine>
-        <EntryTheirs>
-          Monsieur, please stop gnawing on the tablecloth. I am well aware of
-          your hunger.
-        </EntryTheirs>
+        <Mel>
+          Let's start with the good. No JavaScript necessary and it's totally
+          accessible right out of the box.
+        </Mel>
+        <EntryMine>
+          Great, because JavaScript can make things overly complicated.
+        </EntryMine>
+        <Mel>
+          Right, that's why you built this website using React. Yeah, you{' '}
+          <em>really</em> must hate JS.
+        </Mel>
+        <EntryMine>…</EntryMine>
+        <Mel>
+          One bad thing is that there's no feature support in IE, IE Mobile, or
+          Edge. Polyfills exist.
+        </Mel>
+        <EntryMine>
+          IE Mobile? Yeah, <em>huge</em> market share. Go on.
+        </EntryMine>
+        <Mel>
+          It's also difficult to style. Those ugly arrows can be hidden via
+          vendor-prefixed styles. Chrome ignores CSS transitions on the
+          <code>summary</code> element while Firefox seems to only transition
+          opened, closing abruptly.
+        </Mel>
+        <EntryMine>
+          Not bad, but I want to really control the styling, so let's hear about
+          option 2.
+        </EntryMine>
+        <Mel>
+          Okay, but I need to leave for a minute so that the waiter can make a
+          few jokes and earn his keep.
+        </Mel>
       </ul>
     </Section>
 
@@ -139,27 +157,26 @@ const AccordionView = () => (
 
       <ul className="log">
         <EntryTheirs>
-          Here we have a delicious accordion lightly fried in JavaScript. It has
-          basic keyboard accessibility baked into it. From your other visits,
-          the chef is aware of your JavaScript sensitivity and wanted me to
-          inform you that there are only 12 lines of it in this dish, so strap
-          your diaper on and deal with it.
+          Here we have a delicious, semantic accordion lightly fried in
+          JavaScript. The chef is aware of your JavaScript sensitivity and
+          wanted me to inform you that there are only 12 lines of it in this
+          dish, so strap a diaper on and deal with it.
         </EntryTheirs>
-        <EntryMine>…</EntryMine>
+        <Mel>Hey, guys. I'm back. Sorry about the diaper comment, Andy.</Mel>
+        <EntryMine>
+          Just dispense with the pros and cons of this next approach!
+        </EntryMine>
+        <Mel>
+          It's easy to style and works predictably with CSS transitions. Another
+          nice thing is that it works cross-browser with no need for polyfills.
+        </Mel>
+        <EntryMine>But is it accessible?</EntryMine>
+        <Mel>
+          Well, no. Not by default. That's where those lines of JavaScript come
+          in. Adding those few lines above give us basic keyboard accessibility
+          and make things screenreader-friendly.
+        </Mel>
       </ul>
-
-      <h3 className="centeredHeader">Pros</h3>
-      <ReasonList>
-        <ReasonListItem>
-          Easy to style and works predictably with CSS transitions.
-        </ReasonListItem>
-        <ReasonListItem>Works cross-browser with no polyfills.</ReasonListItem>
-      </ReasonList>
-
-      <h3 className="centeredHeader">Con</h3>
-      <ReasonList>
-        <ReasonListItem>Not accessible by default (but close).</ReasonListItem>
-      </ReasonList>
     </Section>
     <Section>
       <h2 className="centeredHeader">Takeaways</h2>

@@ -1,10 +1,9 @@
 .log {
-  margin: 0 0 3em;
+  margin: 0;
   padding: 1em 0;
 }
 
 ol + .log {
-  margin-bottom: 0;
   padding-bottom: 0;
 }
 
