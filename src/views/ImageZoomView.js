@@ -18,30 +18,27 @@ const ImageZoomView = () => (
           I'm thinking about trying the Image Zoom. How is it prepared?
         </EntryMine>
         <EntryTheirs>
-          Ah, well, it is prepared by a third party and brought in frozen.
+          Ah, well, it is prepared by a third party and brought in frozen. It's
+          complicated.
         </EntryTheirs>
         <EntryMine>
-          I'm not eating some reheated crap. Take me to the kitchen. I'll cook
-          it myself.
+          I'm not eating some reheated crap from 2011. I'll cook it myself. Out
+          of my way, waiter!
         </EntryMine>
+        <EntryTheirs>
+          Please stop, sir! Mel is recharging in his dock. He is embarrassed
+          when humans see him like that.
+        </EntryTheirs>
+        <EntryMine>Whoa…</EntryMine>
+        <EntryTheirs avatar="/robot.png">
+          <p>
+            <em>
+              Charging
+              <span className="loading-dots" />
+            </em>
+          </p>
+        </EntryTheirs>
       </ul>
-
-      <ReasonList>
-        <ReasonListItem>
-          The more reliant we become on outside vendors, the more risk we take
-          in polluting the continuity of our work. We should strive to build our
-          own libraries and understand how every feature works.
-        </ReasonListItem>
-        <ReasonListItem>
-          Before hitting Google for some quick plugin, consider how long it
-          would take to build it in-house.
-        </ReasonListItem>
-        <ReasonListItem>
-          If IE11 is not in your project’s browser support tree,
-          <em> definitely</em> consider using modern browser technologies to
-          solve the problem in-house.
-        </ReasonListItem>
-      </ReasonList>
     </Section>
 
     <Section>
@@ -111,6 +108,25 @@ const ImageZoomView = () => (
   background-position: calc(var(--mouse-x) * 1%) calc(var(--mouse-y) * 1%);
 }
 `}</Highlight>
+    </Section>
+    <Section>
+      <h2 className="centeredHeader">Takeaways</h2>
+      <ReasonList>
+        <ReasonListItem>
+          The more reliant we become on outside vendors, the more risk we take
+          in polluting the continuity of our work. We should strive to build our
+          own libraries and understand how every feature works.
+        </ReasonListItem>
+        <ReasonListItem>
+          Before hitting Google for some quick plugin, consider how long it
+          would take to build it in-house.
+        </ReasonListItem>
+        <ReasonListItem>
+          If IE11 is not in your project’s browser support tree,
+          <em> definitely</em> consider using modern browser technologies to
+          solve the problem in-house.
+        </ReasonListItem>
+      </ReasonList>
     </Section>
   </>
 );
