@@ -33,20 +33,23 @@ const BurgerView = () => (
         <EntryTheirs>Your hamburger, monsieur.</EntryTheirs>
         <EntryMine>Is this a joke? Are you trying to poison me?</EntryMine>
         <EntryTheirs>
-          You are so good at complaining! What feedback should I give the
-          kitchen?
+          You are so good at complaining! If only their were some award to
+          provide you.
         </EntryTheirs>
-      </ul>
-
-      <ReasonList>
-        <ReasonListItem>
+        <EntryMine>
           For the love of god, don't include and hide a <em>second</em>{' '}
           <code>&lt;nav&gt;</code> “just for mobile.” Find a way to use a single
           element.
-        </ReasonListItem>
-        <ReasonListItem>
-          Never animate things using the <code>left</code> or <code>top</code>{' '}
-          properties. Instead, use <code>transform</code> with{' '}
+        </EntryMine>
+        <EntryTheirs>
+          But no one will know! These customers will eat just about anything we
+          put on a plate. Have you viewed Amazon's source lately?
+        </EntryTheirs>
+        <EntryMine>
+          Not everyone has thousands of engineers at their disposal. And two{' '}
+          <code>nav</code> menus are harder to maintain than one. Tell the chef
+          to never animate things using the <code>left</code> or{' '}
+          <code>top</code> properties. Instead, use <code>transform</code> with{' '}
           <code>translate</code>. A very{' '}
           <a
             href="https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/"
@@ -57,8 +60,8 @@ const BurgerView = () => (
             old, awesome post
           </a>{' '}
           explains why.
-        </ReasonListItem>
-      </ReasonList>
+        </EntryMine>
+      </ul>
     </Section>
 
     <Section>
@@ -86,22 +89,6 @@ const BurgerView = () => (
         </EntryTheirs>
         <EntryMine>Is it gluten-free?</EntryMine>
       </ul>
-
-      <ReasonList>
-        <ReasonListItem>
-          Organize your HTML so that a hidden checkbox is a parent to your
-          navigation. Create two labels, both pointing to the <code>id</code> of
-          the hidden checkbox. The first label will serve as the hambuger toggle
-          button. The second label will be the menu’s close button.
-        </ReasonListItem>
-        <ReasonListItem>
-          The two-label approach allows us to control our mobile navigation
-          using a single checkbox. We’ve also avoided using <code>:target</code>
-          , which means there's no sudden page jump to suppress. The two-label
-          approach works especially well when a fixed header is employed, as in
-          the second demo.
-        </ReasonListItem>
-      </ReasonList>
     </Section>
   </>
 );
