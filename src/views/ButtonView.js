@@ -21,22 +21,19 @@ const ButtonView = () => (
         <EntryTheirs>
           Enjoy your button, sir. What's that? You don't like it?
         </EntryTheirs>
-        <EntryMine>I can't eat this! Tell the chef:</EntryMine>
+        <EntryMine>
+          I can't eat this! Doesn't the chef know how accessibility suffers when
+          anchors are used to represent buttons?
+        </EntryMine>
+        <EntryTheirs>I'm writing this down…</EntryTheirs>
+        <EntryMine>
+          Write this down, too. Not all browsers allow users to use their tab
+          key to reach anchors.
+        </EntryMine>
+        <EntryTheirs>
+          Okay, okay. I will take this back to the chef and remake this for you.
+        </EntryTheirs>
       </ul>
-
-      <ReasonList>
-        <ReasonListItem>
-          Accessibility suffers when anchors are used in place of native
-          buttons.
-        </ReasonListItem>
-        <ReasonListItem>
-          Some browsers don't allow users to tab to the anchor.
-        </ReasonListItem>
-        <ReasonListItem>
-          Screen readers don't provide helpful announcements for links meant to
-          be buttons.
-        </ReasonListItem>
-      </ReasonList>
     </Section>
 
     <Section>
@@ -49,28 +46,28 @@ const ButtonView = () => (
 
       <ul className="log">
         <EntryTheirs>
-          I've spoken to the chef, and he has made a fresh button for you.
-          Please like us on Yelp.
+          Here is a fresh dish for you, from scratch. Please like us on Yelp.
         </EntryTheirs>
         <EntryMine>
           First, I hate Yelp. More importantly, I still can't eat this code.
-          This is not even a real button. Take these comments back to the chef.
-          Last try before I leave.
+        </EntryMine>
+        <EntryTheirs>
+          They say the customer is always right. What is the problem this time?
+        </EntryTheirs>
+        <EntryMine>
+          This is not a real button. Anchors masquerading as buttons are the
+          imitation crab of the web. Adding a <code>tabindex</code> attribute
+          “fixes” the focus issue, but a true button element receives tab focus
+          for free.
+        </EntryMine>
+        <EntryTheirs>
+          The chef is confused when to use a button and when to use an anchor.
+          How is a humble chef to know?
+        </EntryTheirs>
+        <EntryMine>
+          Links <em>go</em> places; buttons <em>do</em> things. Simple rule.
         </EntryMine>
       </ul>
-
-      <ReasonList>
-        <ReasonListItem>
-          Adding a <code>tabindex</code> attribute “fixes” the focus issue, but
-          the <code>&lt;button&gt;</code> receives focus for free.
-        </ReasonListItem>
-        <ReasonListItem>
-          Why play a <code>role</code> when you can be the real thing?
-        </ReasonListItem>
-        <ReasonListItem>
-          Links <em>go</em> places; buttons <em>do</em> things. Simple rule.
-        </ReasonListItem>
-      </ReasonList>
     </Section>
 
     <Section>
