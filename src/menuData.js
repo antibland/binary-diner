@@ -16,7 +16,7 @@ const data = [
         componentName: 'ImageZoom',
         imgName: '/zoom.png',
         description:
-          'We fly in the finest third-party image zoom plugins and prepare them to order. We are not responsible for customers experiencing heartburn or indigestion.',
+          'We fly in the finest third-party image zoom plugins and prepare them to order. We are not responsible for customers experiencing heartburn, indigestion, or lack of support.',
         price: '$8.99',
       },
     ],
