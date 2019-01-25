@@ -3,8 +3,6 @@ import shared from '../css/shared';
 import EntryMine from '../EntryMine';
 import EntryTheirs from '../EntryTheirs';
 
-const ReasonList = shared.reasonList();
-const ReasonListItem = shared.reasonListItem();
 const Section = shared.section();
 const SectionTitle = shared.sectionTitle();
 
