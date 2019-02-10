@@ -82,8 +82,8 @@ const ImageZoomView = () => (
 
 // 3. Update CSS variables
 
-  root.style.setProperty('--mouse-x', percentX);
-  root.style.setProperty('--mouse-y', percentY);
+  this.style.setProperty('--mouse-x', percentX);
+  this.style.setProperty('--mouse-y', percentY);
       `}
       </Highlight>
 
@@ -94,13 +94,6 @@ const ImageZoomView = () => (
       </p>
 
       <Highlight className="css">{`
-:root {
-  --mouse-x: 0;
-  --mouse-y: 0;
-}
-
-…
-
 .zoomify:hover::after {
   opacity: 1;
   background-size: 250%;
