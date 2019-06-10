@@ -10,16 +10,16 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "shortid": "^2.2.14",
-    "styled-components": "^4.0.0"
-  },
-  "devDependencies": {
+    "styled-components": "^4.0.0",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "devDependencies": {
     "prettier": "1.18.2"
   },
   "scripts": {
