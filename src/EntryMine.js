@@ -12,11 +12,12 @@ function EntryMine(props) {
 }
 
 EntryMine.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.any,
   avatar: PropTypes.string,
 };
 
 EntryMine.defaultProps = {
+  children: [],
   avatar: '/me.jpg',
 };
 

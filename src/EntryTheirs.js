@@ -12,11 +12,12 @@ function EntryTheirs(props) {
 }
 
 EntryTheirs.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.any,
   avatar: PropTypes.string,
 };
 
 EntryTheirs.defaultProps = {
+  children: [],
   avatar: '/snob.jpg',
 };
 
